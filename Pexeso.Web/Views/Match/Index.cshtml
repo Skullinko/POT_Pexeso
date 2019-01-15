@@ -1,0 +1,50 @@
+﻿
+@model System.Collections.Generic.List<Pexeso.Web.Models.Match>
+
+@{
+    ViewBag.Title = "Games";
+}
+
+<h2>Games</h2>
+
+@using (Html.BeginForm())
+{
+<p>
+    Filter by game id @Html.TextBox("gameIdFilter"), game size @Html.TextBox("gameSizeFilter"), player nick @Html.TextBox("nickFilter"), result @Html.TextBox("resultFilter")
+    <input type="submit" value="Search" />
+</p>
+}
+
+<Table>
+    <tr>
+        <th>@Html.ActionLink("Id", "Index", new { sortOrder = ViewBag.GameIdSortParm }, new { @style = "color:white" })</th>
+        <th>@Html.ActionLink("Size", "Index", new { sortOrder = ViewBag.GameSizeSortParm }, new { @style = "color:white" })</th>
+        <th>@Html.ActionLink("Player nick", "Index", new { sortOrder = ViewBag.PlayerNickSortParm }, new { @style = "color:white" })</th>
+        <th>@Html.ActionLink("Result", "Index", new { sortOrder = ViewBag.ResultSortParm }, new { @style = "color:white" })</th>
+        <th>@Html.ActionLink("Number of moves", "Index", new { sortOrder = ViewBag.NumberOfMovesSortParm }, new { @style = "color:white" })</th>
+        <th>@Html.ActionLink("Duration", "Index", new { sortOrder = ViewBag.DurationSortParm }, new { @style = "color:white" })</th>
+    </tr>
+    @foreach (var match in Model)
+    {
+        <tr>
+            <td>
+                @match.Game.Id
+            </td>
+            <td>
+                @match.Game.GameSize.ToString()
+            </td>
+            <td>
+                @match.Player.Nick
+            </td>
+            <td>
+                @match.Result.ToString()
+            </td>
+            <td>
+                @match.NumberOfMoves
+            </td>
+            <td>
+                @(match.Game.Duration.ToString(@"hh\:mm\:ss"))
+            </td>
+        </tr>
+    }
+</Table>

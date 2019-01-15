@@ -1,0 +1,28 @@
+﻿
+@model System.Collections.Generic.List<Pexeso.Web.Models.Player>
+
+@{
+    ViewBag.Title = "Players";
+}
+
+<h2>Players</h2>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Filter by nick @Html.TextBox("nickFilter")
+        <input type="submit" value="Search" />
+    </p>
+}
+
+<Table>
+    <tr>
+        <th>@Html.ActionLink("Nick", "Index", new { sortOrder = ViewBag.NickSortParm }, new { @style = "color:white" })</th>
+    </tr>
+    @foreach (var player in Model)
+    {
+        <tr>
+            <td>@player.Nick</td>
+        </tr>
+    }
+</Table>

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pexeso.Server", "Pexeso.Server\Pexeso.Server.csproj", "{5C19E62E-8EE6-4D7F-8D14-782954EDC7DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pexeso.ChatLibrary", "Pexeso.ChatLibrary\Pexeso.ChatLibrary.csproj", "{19EA3D55-3A5A-4AC0-A606-463BDE93E4CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pexeso.Database", "Pexeso.Database\Pexeso.Database.csproj", "{F2BA54E5-059A-43C3-B976-51969B11CAE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pexeso.ClientGUI", "Pexeso.ClientGUI\Pexeso.ClientGUI.csproj", "{4C03DE3B-7342-4B0C-A2E7-079D9FBA7BFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pexeso.Web", "Pexeso.Web\Pexeso.Web.csproj", "{381C6462-520D-4E43-B6D9-85C77C7062E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C19E62E-8EE6-4D7F-8D14-782954EDC7DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C19E62E-8EE6-4D7F-8D14-782954EDC7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C19E62E-8EE6-4D7F-8D14-782954EDC7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C19E62E-8EE6-4D7F-8D14-782954EDC7DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19EA3D55-3A5A-4AC0-A606-463BDE93E4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19EA3D55-3A5A-4AC0-A606-463BDE93E4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19EA3D55-3A5A-4AC0-A606-463BDE93E4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19EA3D55-3A5A-4AC0-A606-463BDE93E4CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2BA54E5-059A-43C3-B976-51969B11CAE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2BA54E5-059A-43C3-B976-51969B11CAE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2BA54E5-059A-43C3-B976-51969B11CAE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2BA54E5-059A-43C3-B976-51969B11CAE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C03DE3B-7342-4B0C-A2E7-079D9FBA7BFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C03DE3B-7342-4B0C-A2E7-079D9FBA7BFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C03DE3B-7342-4B0C-A2E7-079D9FBA7BFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C03DE3B-7342-4B0C-A2E7-079D9FBA7BFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{381C6462-520D-4E43-B6D9-85C77C7062E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{381C6462-520D-4E43-B6D9-85C77C7062E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{381C6462-520D-4E43-B6D9-85C77C7062E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{381C6462-520D-4E43-B6D9-85C77C7062E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {282ADBFB-E637-418B-BC82-22119F94B705}
+	EndGlobalSection
+EndGlobal
